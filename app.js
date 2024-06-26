@@ -36,7 +36,6 @@ function limpiarCaja() {
 
 function generarNumeroSecreto() {
     let numero = Math.floor(Math.random() * 10) + 1;
-    console.log(numero);
 
     if (listaNumerosSorteados.length == 10) {
         asignarTextoElemento('p', "Ya se sorteron todos los numeros de la lista");
@@ -54,8 +53,6 @@ function condicionesIniciales() {
     asignarTextoElemento('h1', "Juego del Numero Secreto");
     asignarTextoElemento('p', "Ingresa un numero del 1 al 10 ");
     numeroSecreto = generarNumeroSecreto();
-    console.log(numeroSecreto);
-
     intentos = 1;
 }
 
